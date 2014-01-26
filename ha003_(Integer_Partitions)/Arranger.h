@@ -16,7 +16,7 @@ namespace std {
 class Arranger {
 public:
 	Arranger (int balls, int boxes) : _balls(balls), _boxes(boxes), _arr(new int[_boxes]) {std::memset(_arr, 0, sizeof(int)*_boxes); }
-	~Arranger () {delete[]_arr; }
+	~Arranger () {delete[] _arr; }
 
 	void arrange (void) const {this->_arrange(_arr, _balls, _boxes); }
 
